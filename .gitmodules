@@ -1,0 +1,3 @@
+[submodule "bang"]
+	path = bang
+	url = git@github.com:volkovasystems/bang.git
