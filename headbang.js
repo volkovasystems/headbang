@@ -26,7 +26,7 @@ var headbang = function headbang( URL, responseHandler ){
 		@end-meta-configuration
 	*/
 
-	bang( "HEAD", URL, function catcher( ){
+	bang( "HEAD", URL, function catcher( error ){
 
         if( this.readyState == 2 ||
             this.readyState == 4 )
