@@ -27,10 +27,12 @@ var headbang = function headbang( URL, responseHandler ){
 	*/
 
 	bang( "HEAD", URL, function catcher( ){
+
         if( this.readyState == 2 ||
             this.readyState == 4 )
         {
 			var headerString = this.getAllResponseHeaders( );
+
 			if( this.status == 200 ){
 				responseHandler( true, headerString );
 			}else if( this.status >= 400 ){
