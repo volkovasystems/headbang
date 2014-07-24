@@ -27,8 +27,8 @@ var headbang = function headbang( URL, responseHandler ){
 	*/
 
 	bang( "HEAD", URL, function catcher( ){
-        if( this.responseState == 2 ||
-            this.responseState == 4 )
+        if( this.readyState == 2 ||
+            this.readyState == 4 )
         {
 			var headerString = this.getAllResponseHeaders( );
 			if( this.status == 200 ){
