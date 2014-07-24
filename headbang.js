@@ -33,7 +33,9 @@ var headbang = function headbang( URL, responseHandler ){
         {
 			var headerString = this.getAllResponseHeaders( );
 
-			if( this.status == 200 ){
+            if( error ){
+                responseHandler( error );
+            }else if( this.status == 200 ){
 				responseHandler( true, headerString );
 			}else if( this.status >= 400 ){
 				responseHandler( false, headerString );
