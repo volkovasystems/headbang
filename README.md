@@ -1,4 +1,4 @@
 headbang
 ========
 
-Simple XMLHttpRequest HEAD request.
+Simple synchronous XMLHttpRequest HEAD request.
